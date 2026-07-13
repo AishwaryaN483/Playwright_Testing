@@ -31,6 +31,143 @@ Overall Automation Progress: ~75%
 
 The project successfully automates the primary user workflows including authentication, navigation, Task Bot creation, Message Box insertion, Form creation, and TextBox addition while following a modular Page Object Model architecture.
 
+# Setup Instructions
+
+## Prerequisites
+
+Before running the project, ensure the following software is installed:
+
+- Node.js (v18 or above)
+- Visual Studio Code
+- Playwright
+- Git
+
+---
+
+## Project Setup
+
+Clone the repository
+
+```bash
+git clone <repository-url>
+```
+
+Navigate to the project folder
+
+```bash
+cd Playwright_Testing
+```
+
+Install project dependencies
+
+```bash
+npm install
+```
+
+Install Playwright browsers
+
+```bash
+npx playwright install
+```
+
+---
+
+# Test Execution
+
+## Execute All Tests
+
+```bash
+npx playwright test
+```
+
+## Execute Message Box Test
+
+```bash
+npx playwright test tests/messageBox.spec.js
+```
+
+## Execute Form Test
+
+```bash
+npx playwright test tests/formRules.spec.js
+```
+
+---
+
+# Playwright Report
+
+Generate and view the Playwright HTML Report
+
+```bash
+npx playwright show-report
+```
+
+The report provides
+
+- Test execution summary
+- Pass/Fail status
+- Execution timeline
+- Screenshots (on failures)
+- Trace information
+- Video recording (if enabled)
+
+---
+
+# Framework and Tools Used
+
+## Automation Framework
+
+- Playwright
+
+## Programming Language
+
+- JavaScript
+
+## Runtime Environment
+
+- Node.js
+
+## Design Pattern
+
+- Page Object Model (POM)
+
+## IDE
+
+- Visual Studio Code
+
+## Version Control
+
+- Git
+- GitHub
+
+---
+
+# Environment / Configuration Notes
+
+- Playwright configuration is maintained in `playwright.config.js`.
+- Test data is stored separately in `test-data/testData.js`.
+- Browser execution is configured through Playwright.
+- Tests are organized based on individual use cases.
+- HTML reports are automatically generated after every execution.
+- The project follows a modular Page Object Model structure for improved maintainability and code reusability.
+
+---
+
+
+# Repository Contents
+
+```
+Playwright_Testing/
+
+pages/
+tests/
+test-data/
+utils/
+playwright.config.js
+package.json
+README.md
+```
+
 # Automation Flow
 
 ## Use Case 1 – Message Box Task
@@ -109,15 +246,6 @@ Save Form
    ▼
 End
 ```
-
----
-
-# Framework Used
-
-- Playwright
-- JavaScript
-- Node.js
-- Page Object Model (POM)
 
 ---
 
@@ -271,32 +399,6 @@ Basic Playwright assertions have been implemented to verify
 - Task Bot editor loading
 - Form designer loading
 - Functional execution of automated workflow
-
----
-
-# Running the Project
-
-## Install Dependencies
-
-```bash
-npm install
-```
-
----
-
-## Install Playwright Browsers
-
-```bash
-npx playwright install
-```
-
----
-
-## Execute All Tests
-
-```bash
-npx playwright test
-```
 
 ---
 
