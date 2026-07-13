@@ -10,6 +10,27 @@ The automation replicates the manual workflow performed in the application and v
 
 ---
 
+| Automated Workflows | 2 |
+| UI Automation Coverage* | ~75% |
+| Manual Effort Reduced* | ~80% |
+| Reusable Components | 5 Page Objects |
+| Test Scripts | 2 |
+| Playwright HTML Report | Generated |
+
+**Automation Completion:** **~60%**
+
+---
+
+## Overall Project Completion
+
+```text
+███████████████████░░░░░
+
+Overall Automation Progress: ~75%
+```
+
+The project successfully automates the primary user workflows including authentication, navigation, Task Bot creation, Message Box insertion, Form creation, and TextBox addition while following a modular Page Object Model architecture.
+
 # Automation Flow
 
 ## Use Case 1 – Message Box Task
